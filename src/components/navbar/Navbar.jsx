@@ -19,42 +19,54 @@ const Navbar = () => {
         <h1 className="website-title">Pyschologue TCC</h1>
       </NavLink>
 
-<div className={menuDisplay ? 'open' : 'close'} onClick={() => {setNavbarDisplay(!navbarDisplay) ; setMenuDisplay(!menuDisplay)}}>
-      <div id="nav-icon">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+      <div
+        className={menuDisplay ? "open" : "close"}
+        onClick={() => {
+          setNavbarDisplay(!navbarDisplay);
+          setMenuDisplay(!menuDisplay);
+        }}
+      >
+        <div id="nav-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
 
-      <div className={navbarDisplay ? "container-on" : "container-off"}>
-        <div className="navbar-pages">
-          <NavLink
-            to="/tcc"
-            className={(navData) =>
-              navData.isActive ? "navigation-link selected" : "navigation-link"
-            }
-          >
-            <h3>TCC</h3>
-          </NavLink>
-          <NavLink
-            to="/consult"
-            className={(navData) =>
-              navData.isActive ? "navigation-link selected" : "navigation-link"
-            }
-          >
-            <h3>Consultations</h3>
-          </NavLink>
-          <NavLink
-            to="/contact"
-            className={(navData) =>
-              navData.isActive ? "navigation-link selected" : "navigation-link"
-            }
-          >
-            <h3>Contact et RDV</h3>
-          </NavLink>
+        <div className={navbarDisplay ? "container-on" : "container-off"}>
+          <div className="navbar-pages">
+            <NavLink
+              to="/tcc"
+              className={(navData) =>
+                navData.isActive
+                  ? "navigation-link selected"
+                  : "navigation-link"
+              }
+            >
+              <h3>TCC</h3>
+            </NavLink>
+            <NavLink
+              to="/consult"
+              className={(navData) =>
+                navData.isActive
+                  ? "navigation-link selected"
+                  : "navigation-link"
+              }
+            >
+              <h3>Consultations</h3>
+            </NavLink>
+            <NavLink
+              to="/contact"
+              className={(navData) =>
+                navData.isActive
+                  ? "navigation-link selected"
+                  : "navigation-link"
+              }
+            >
+              <h3>Contact et RDV</h3>
+            </NavLink>
+          </div>
         </div>
       </div>
-    </div>
     </div>
   );
 };
