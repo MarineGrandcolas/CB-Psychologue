@@ -1,0 +1,25 @@
+.TCC {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+  line-height: 2.5em;
+  position: relative;
+  text-align: justify;
+  top : 10%;
+}
+
+.TCC p {
+  text-indent: 3em;
+  text-justify: auto;
+}
+
+section .text-container{
+  margin-bottom: 30px;
+}
+
+.text-container ul li b {
+  border-radius: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
