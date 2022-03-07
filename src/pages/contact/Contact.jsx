@@ -17,7 +17,7 @@ const Contact = () => {
         <h2>Le cabinet</h2>
         <img src={Cabinet} alt="aperçu du cabinet" />
         <p>
-          Titres reconnus par l’état, enregistrés et vérifiables
+          Titres reconnus par l’Etat, enregistrés et vérifiables
           auprès du répertoire ADELI (N°579308768)</p>
       </div>
     </div>
