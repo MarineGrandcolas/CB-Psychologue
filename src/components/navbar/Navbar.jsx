@@ -19,7 +19,8 @@ const Navbar = () => {
         <h1 className="website-title">Pyschologue TCC</h1>
       </NavLink>
 
-      <div id="nav-icon" className={menuDisplay ? 'open' : 'close'} onClick={() => {setNavbarDisplay(!navbarDisplay) ; setMenuDisplay(!menuDisplay)}}>
+<div className={menuDisplay ? 'open' : 'close'} onClick={() => {setNavbarDisplay(!navbarDisplay) ; setMenuDisplay(!menuDisplay)}}>
+      <div id="nav-icon">
         <span></span>
         <span></span>
         <span></span>
@@ -53,6 +54,7 @@ const Navbar = () => {
           </NavLink>
         </div>
       </div>
+    </div>
     </div>
   );
 };

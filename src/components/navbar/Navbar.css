@@ -1,4 +1,5 @@
 .Navbar {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -62,7 +63,6 @@
 }
 
 #nav-icon {
-  cursor: pointer;
   margin: 50px auto;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
